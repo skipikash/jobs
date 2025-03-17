@@ -1,0 +1,17 @@
+name: My Job
+platform:
+  os: linux
+  arch: arm64
+env:
+  ENV1: some-value
+  ENV2: another-value
+secrets:
+  SECRET1: ref:my-secret
+stages:
+- name: Check Python Version
+  image: python:3.13.2
+  script: |-
+    echo "Hello World"
+    python3 --version
+    echo "$ENV1"
+    curl -I https://www.google.com
