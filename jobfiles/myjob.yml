@@ -14,4 +14,8 @@ stages:
     echo "Hello World"
     python3 --version
     echo "$ENV1"
-    curl -I https://www.google.com
+    slee 10
+- name: Say Hello
+  image: python:3.13.2
+  script: |-
+    echo "Hello my beautiful wife :)"
