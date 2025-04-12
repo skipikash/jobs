@@ -14,8 +14,10 @@ stages:
     echo "Hello World"
     python3 --version
     echo "$ENV1"
-    slee 10
+    sleep 15
 - name: Say Hello
   image: python:3.13.2
+  run_after:
+    - Check Python Version
   script: |-
     echo "Hello my beautiful wife :)"
