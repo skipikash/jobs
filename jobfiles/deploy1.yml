@@ -1,4 +1,4 @@
-apiVersion: abcd
+apiVersion: devglider.deploytype/v1
 name: ECS Deployment
 description: This is an incredible ecs deployment deploy type for deploying ecs the most ecs way!
 logoUrl: https://icon.icepanel.io/Technology/png-shadow-512/AWS.png
