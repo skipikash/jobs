@@ -1,7 +1,7 @@
 apiVersion: devglider.deploytype/v1
 metadata:
   name: ECS Deployment
-  description: This is an incredible ecs deployment deploy type for deploying ecs the most ecs way!
+  desciption: This is an incredible ecs deployment deploy type for deploying ecs the most ecs way!
   logo: https://icon.icepanel.io/Technology/png-shadow-512/AWS.png
 environmentFields:
   - name: CLUSTER
