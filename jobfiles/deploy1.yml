@@ -7,10 +7,6 @@ environmentFields:
   - name: CLUSTER
     type: select
     description: the cluster where to deploy the application
-    showIn:
-      - dev
-      - test
-      - prod
     options:
       - cluster-1
       - cluster-2
