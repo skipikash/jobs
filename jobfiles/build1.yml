@@ -1,0 +1,9 @@
+apiVersion: devglider.buildtype/v1
+metadata:
+  name: Nuxt v4
+  description: BuildType for building nuxt applications using Nuxt v4
+  logo: https://icon.icepanel.io/Technology/svg/Nuxt-JS.svg
+environmentVars:
+  - name: ECHO_TEXT
+    default: hello
+    description: text you want to print out
