@@ -6,4 +6,5 @@ metadata:
 environmentVars:
   - name: ECHO_TEXT
     default: hello
+    required: true
     description: text you want to print out
