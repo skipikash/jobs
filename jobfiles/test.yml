@@ -2,4 +2,5 @@ apiVersion: hello
 on:
   - push::this
   - tag::that
+  - pr::who
 
