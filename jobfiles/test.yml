@@ -1,6 +1,19 @@
 apiVersion: hello
-on:
-  - push::this
-  - tag::that
-  - pr::who
+
+
+triggers:
+  pushes:
+    branches:
+      - "*"
+    tags:
+      - "*"
+    paths:
+      exclude:
+        - "docs/**"
+      include:
+        - "**/*.java"
+
+  prs:
+    branches:
+      - "*"
 
