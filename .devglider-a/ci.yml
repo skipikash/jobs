@@ -1,0 +1,37 @@
+name: hello
+try: again4
+
+triggers:
+  pushes:
+    branches:
+      - "*"
+    tags:
+      - "*"
+    paths:
+      exclude:
+        - "docs/**"
+      include:
+        - "**/*.java"
+
+  prs:
+    branches:
+      - "*"
+
+jobs:
+  build:
+    when: ${{git.ref == "develop"}}
+    call: ./my-build-job.yml
+    inputs:
+      parameter1: ${{env.ABC}}
+  deploy:
+    depends-on: [build]
+    stages:
+      - run: echo "hello"
+
+      - call: helm/deploy
+        inputs:
+          chart: my-chart
+          k8scluster: cluster-1234
+
+      - run: echo "goodbye"
+        when: ${{ env.SAY_GOODBYE }}
