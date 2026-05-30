@@ -15,4 +15,3 @@ triggers:
   prs:
     branches:
       - "*"
-
