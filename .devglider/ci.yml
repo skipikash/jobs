@@ -18,12 +18,12 @@ triggers:
       - "*"
 
 jobs:
-
   build:
     when: ${{git.ref == "develop"}}
     call: ./my-build-job.yml
     inputs:
       parameter1: ${{env.ABC}}
+
   deploy:
     depends-on: [build]
     stages:
