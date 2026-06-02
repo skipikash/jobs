@@ -16,6 +16,7 @@ triggers:
   prs:
     branches:
       - "*"
+      
 
 jobs:
   build:
