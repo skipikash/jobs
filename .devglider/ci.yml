@@ -17,8 +17,6 @@ triggers:
     branches:
       - "*"
 
-
-
 jobs:
   build:
     when: ${{git.ref == "develop"}}
