@@ -1,6 +1,3 @@
-name: hello
-try: again4
-
 triggers:
   pushes:
     branches:
