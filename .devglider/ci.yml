@@ -9,8 +9,8 @@ triggers:
     paths:
       exclude:
         - "docs/**"
-      include:
-        - "**/*.java"
+      # include:
+      #   - "**/*.java"
 
   prs:
     branches:
