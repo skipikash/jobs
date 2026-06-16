@@ -30,10 +30,5 @@ jobs:
     stages:
       - run: echo "hello"
 
-      - call: helm/deploy
-        inputs:
-          chart: my-chart
-          k8scluster: cluster-1234
-
       - run: echo "goodbye"
         when: ${{ env.SAY_GOODBYE }}
