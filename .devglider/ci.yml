@@ -22,6 +22,8 @@ jobs:
     call: ./my-build-job.yml
     inputs:
       parameter1: ${{env.ABC}}
+    stages:
+      - run: echo "hello"
 
   deploy:
     depends-on: [build]
