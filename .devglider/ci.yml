@@ -23,12 +23,11 @@ jobs:
     inputs:
       parameter1: ${{env.ABC}}
     stages:
-      - run: echo "hello"
+      - run: echo "hello build"
+      - run: echo "goodbye build"
 
   deploy:
     depends-on: [build]
     stages:
-      - run: echo "hello"
-
-      - run: echo "goodbye"
-        when: ${{ env.SAY_GOODBYE }}
+      - run: echo "hello deploy"
+      - run: echo "goodbye deploy"
