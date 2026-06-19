@@ -24,6 +24,7 @@ jobs:
       parameter1: ${{env.ABC}}
     stages:
       - run: echo "hello build"
+      - run: sleep 5
       - run: echo "goodbye build"
 
   deploy:
