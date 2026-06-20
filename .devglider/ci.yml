@@ -24,11 +24,12 @@ jobs:
       parameter1: ${{env.ABC}}
     stages:
       - run: echo "hello build"
-      - run: sleep 5
+      - run: sleep 30
       - run: echo "goodbye build"
 
   deploy:
     depends-on: [build]
     stages:
       - run: echo "hello deploy"
+      - run: sleep 30
       - run: echo "goodbye deploy"
