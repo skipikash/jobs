@@ -23,7 +23,10 @@ jobs:
     inputs:
       parameter1: ${{env.ABC}}
     stages:
-      - run: echo "hello build"
+      - run: |
+          echo "hello build"
+          echo "hello steve"
+          echo "whats up?"
       - run: sleep 30
       - run: echo "goodbye build"
 
