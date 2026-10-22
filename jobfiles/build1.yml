@@ -1,3 +1,4 @@
+anotherProp: abcd
 metadata:
   name: Nuxt v4
   description: BuildType for building nuxt applications using Nuxt v4
