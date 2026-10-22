@@ -2,8 +2,7 @@ metadata:
   name: Nuxt v4
   description: BuildType for building nuxt applications using Nuxt v4
   logo: https://icon.icepanel.io/Technology/svg/Nuxt-JS.svg
-environmentVars:
-  - name: ECHO_TEXT
+input-params:
+  - name: GREETING
     default: hello
-    required: true
-    description: text you want to print out
+    description: a welcoming greeting to say hello
