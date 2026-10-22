@@ -7,3 +7,8 @@ input-params:
   - name: GREETING
     default: hello
     description: a welcoming greeting to say hello
+
+jobs:
+  say-hello:
+    stages:
+      - run: echo ${{ GREETING }}
