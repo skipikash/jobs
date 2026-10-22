@@ -1,4 +1,6 @@
-apiVersion: devglider.buildtype/v1
+ a 
+ asdc 
+  adapiVersion devglider.buildtype/v1
 goodmorning: abcdef
 metadata:
   name: Nuxt v4
