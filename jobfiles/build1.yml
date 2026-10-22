@@ -1,7 +1,3 @@
- a 
- asdc 
-  adapiVersion devglider.buildtype/v1
-goodmorning: abcdef
 metadata:
   name: Nuxt v4
   description: BuildType for building nuxt applications using Nuxt v4
