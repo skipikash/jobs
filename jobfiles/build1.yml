@@ -9,4 +9,9 @@ input-params:
 jobs:
   say-greeting:
     stages:
+      - run: echo hello
+      - run: echo there
+      - run: echo how
+      - run: echo are
+      - run: echo you?
       - run: echo ${{ GREETING }}
