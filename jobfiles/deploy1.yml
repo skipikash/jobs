@@ -2,7 +2,7 @@ metadata:
   name: ECS Deployment
   description: This is an incredible ecs deployment deploy type for deploying ecs the most ecs way!
   logo: https://icon.icepanel.io/Technology/png-shadow-512/AWS.png
-environmentFields:
+environment-fields:
   - name: CLUSTER
     type: select
     description: the cluster where to deploy the application
