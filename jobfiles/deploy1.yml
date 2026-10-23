@@ -1,4 +1,3 @@
-apiVersion: devglider.deploytype/v1
 metadata:
   name: ECS Deployment
   description: This is an incredible ecs deployment deploy type for deploying ecs the most ecs way!
